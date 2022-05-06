@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 1024px;
+  width: 1440px;
+  background: #121212;
+  color: #fff;
+  margin: 0 auto;
+  font-family: monserat, sans-serif;
+  z-index: 1000;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* HEADER */
+.wrapper {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+
+  margin-left: 52px;
+  margin-top: 58px;
+  margin-right: 60px;
+}
+
+.wrapper_nav {
+  grid-column: 1/5;
+  grid-row: 1;
+  font-size: 1.25rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.wrapper_nav span:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.wrapper_nav li:first-child {
+  padding-right: 50px;
+}
+.wrapper_nav li:last-child {
+  padding-left: 50px;
+}
+
+.wrapper_logo {
+  position: relative;
+  grid-column: 3/5;
+  grid-row: 1;
+  font-size: 32px;
+}
+.wrapper_logo span:first-child {
+  color: #bdbdbd;
+  opacity: 50%;
+}
+
+.wrapper_logo span:last-child {
+  font-weight: bold;
+}
+
+.wrapper_logo img {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+
+  width: 62px;
+  height: 22px;
+}
+
+.wrapper_instruments {
+  grid-column: 5/5;
+  grid-row: 1;
+}
+
+.wrapper_instruments img {
+  height: 20px;
+  cursor: pointer;
+}
+
+.wrapper_instruments img:first-child {
+  padding-right: 50px;
+}
+.wrapper_instruments img:last-child {
+  padding-left: 50px;
+}
+
+/* MIDDLE PART */
+
+.conteiner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 12;
+  grid-gap: 1rem;
+
+  margin-top: 152px;
+}
+
+.conteiner p:first-child {
+  line-height: 0.85;
+}
+
+.discription {
+  grid-column: 2/6;
+  grid-row: 2/12;
+  text-align: start;
+}
+
+.first_text {
+  font-size: 30px;
+  color: #bdbdbd;
+}
+.second_text {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.third_text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 4;
+}
+
+.fourth_text,
+.fifth_text {
+  font-size: 16px;
+}
+
+.shoes {
+  grid-column: 6/12;
+  grid-row: 1/5;
+  z-index: 999;
+}
+.shoes__text {
+  grid-column: 12/12;
+  grid-row: 2/4;
+
+  font-size: 250px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+.btn {
+  grid-column: 12/12;
+  grid-row: 6/8;
+}
+
+/* FOOOTER*/
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 5;
+}
+
+.footer-style {
+}
+
+.footer-buy {
+}
+
+.footer-language {
+}
